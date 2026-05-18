@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrParado",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrParado",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Gameplay/Jogador/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

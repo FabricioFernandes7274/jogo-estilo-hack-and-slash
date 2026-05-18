@@ -1,0 +1,1 @@
+credit_y = room_height

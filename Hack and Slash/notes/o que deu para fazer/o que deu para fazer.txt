@@ -1,0 +1,12 @@
+cenarios
+
+menus personalizados
+
+colisões com paredes e com inimigos
+mecanicas de movimento
+mecanicas de dash
+sistema de combate
+combate com combo
+inimigo simples com comportamento
+sistema de fases
+sistema de Estilo e Pontuação (PRINCIPAL)

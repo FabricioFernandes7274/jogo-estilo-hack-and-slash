@@ -1,0 +1,7 @@
+1. ataque do player
+2. dano/vida
+3. invencibilidade após tomar dano
+4.Melhorar  IA do inimigo
+5. combo
+6. GUI completo com pontuação/UI e etc.
+7. Sistema de taunt

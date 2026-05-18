@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrNormalizacao",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrNormalizacao",
+  "parent":{
+    "name":"Uteis",
+    "path":"folders/Uteis.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrMovimento",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrMovimento",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Gameplay/Jogador/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

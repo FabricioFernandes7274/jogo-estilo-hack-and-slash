@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"mecanicas",
+  "name":"mecanicas",
+  "parent":{
+    "name":"Anotacoes",
+    "path":"folders/Anotacoes.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

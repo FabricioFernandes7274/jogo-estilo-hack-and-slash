@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrDash",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrDash",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Gameplay/Jogador/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
