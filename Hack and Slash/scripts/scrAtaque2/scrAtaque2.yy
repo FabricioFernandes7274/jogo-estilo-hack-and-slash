@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrAtaque2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrAtaque2",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Gameplay/Jogador/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

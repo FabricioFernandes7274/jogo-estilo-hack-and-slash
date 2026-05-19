@@ -1,7 +1,7 @@
-1. ataque do player
-2. dano/vida
-3. invencibilidade após tomar dano
-4.Melhorar  IA do inimigo
-5. combo
-6. GUI completo com pontuação/UI e etc.
-7. Sistema de taunt
+1. ataque do player - feito
+5. combo - feito + ou -
+2. dano/vida - feito
+3. invencibilidade após tomar dano - feito
+4. Melhorar  IA do inimigo - falta
+6. GUI completo com pontuação/UI e etc. - falta
+7. Sistema de taunt - falta talvez bão tenha

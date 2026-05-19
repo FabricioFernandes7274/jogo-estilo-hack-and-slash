@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scrAtaque",
+  "%Name":"scrAtaque1",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scrAtaque",
+  "name":"scrAtaque1",
   "parent":{
     "name":"Scripts",
     "path":"folders/Gameplay/Jogador/Scripts.yy",

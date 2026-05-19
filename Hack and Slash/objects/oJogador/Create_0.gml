@@ -3,6 +3,9 @@
 vel = 7
 velv = 0
 velh = 0
+dir_x = 1
+dir_y = 0
+dir_personagem = 1
 
 #endregion
 
@@ -26,6 +29,32 @@ ataque_time = 10 // duração do ataque
 ataque_timer = 0
 
 is_ataque = false
+
+ataque_executado = false
+
+dir_x_ataque = dir_x
+
+alvo = noone
+proximo_combo = false
+acertou_inimigo = false
+
+#endregion
+
+#region VARIAVEIS DE DANO DO JOGADOR
+
+dano_timer = 0
+
+knockback_x = 0
+knockback_y = 0
+
+invulneravel = false
+invul_timer = 0
+
+#endregion
+
+#region VARIAVEIS de ESTADO MORTO
+
+morte_timer = 0
 
 #endregion
 
@@ -59,7 +88,8 @@ var personagens = [
 	sprPlayer4
 ]
 
-sprite_index = personagens[global.personagem_escolhido]
+// sprite_index = personagens[global.personagem_escolhido]
+sprite_index = sprPlayer1
 
 #endregion
 
@@ -69,7 +99,11 @@ enum estados {
 	Parado,
 	Movimento,
 	Dash,
-	Ataque,
+	Dano,
+	Morto,
+	Ataque1,
+	Ataque2,
+	Ataque3
 }
 
 estado = estados.Parado

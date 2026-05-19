@@ -1,5 +1,6 @@
 function scrDash()
 {
+	is_dashing = true
 	
 	// calcula para onde o personagem vai se mover no dash
 	var nx = x + dash_dir_x * dash_speed
@@ -18,5 +19,6 @@ function scrDash()
 	// quando o dash acaba volta por estado parado
     if dash_timer <= 0 {
         estado = estados.Parado
+		is_dashing = false
     }
 }

@@ -6,12 +6,16 @@ function scrMovimento()
     var key_cima = keyboard_check(ord("W"))
     var key_baixo = keyboard_check(ord("S"))
     var key_ataque = keyboard_check(ord("J"))
-	var key_dash =  keyboard_check_pressed(vk_shift)
+	var key_dash =  keyboard_check_pressed(ord("K"))
     #endregion
 
     #region DIRECAO
     var move_x = key_direita - key_esquerda
     var move_y = key_baixo - key_cima
+	
+	if move_x != 0 {
+	    dir_personagem = sign(move_x)
+	}
     #endregion
 
     #region NORMALIZACAO
@@ -59,8 +63,12 @@ function scrMovimento()
 
     // ataque
     if key_ataque {
-        estado = estados.Ataque
+        estado = estados.Ataque1
 		ataque_timer = ataque_time
+		
+		if move_x != 0 { 
+			dir_x_ataque = sign(move_x)
+		}
     }
 
     // dash

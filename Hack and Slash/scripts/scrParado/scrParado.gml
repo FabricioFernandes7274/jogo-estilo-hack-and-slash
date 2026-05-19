@@ -6,7 +6,8 @@ function scrParado()
     var key_cima = keyboard_check(ord("W"));
     var key_baixo = keyboard_check(ord("S"))
     var key_ataque = keyboard_check_pressed(ord("J"))
-	var key_dash =  keyboard_check_pressed(vk_shift)
+	var key_dash =  keyboard_check_pressed(ord("K"))
+
 	#endregion 
 
 	#region DIREÇÃO
@@ -17,18 +18,22 @@ function scrParado()
 	#region TROCA DE ESTADO
 	
     // se começou a se mover, vai para o estado movimento
-    if (move_x != 0 || move_y != 0)
-    {
+    if (move_x != 0 || move_y != 0) {
+		
         estado = estados.Movimento
-        exit
+        
+		exit
     }
 
     // ataque
-    if (key_ataque)
-    {
-        estado = estados.Ataque
+    if (key_ataque) {
+		
+        estado = estados.Ataque1
 		ataque_timer = ataque_time
-        exit
+		
+		dir_x_ataque = dir_personagem
+
+		exit
     }
 	#endregion
 
