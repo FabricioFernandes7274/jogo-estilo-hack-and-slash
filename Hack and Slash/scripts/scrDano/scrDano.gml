@@ -7,8 +7,8 @@ function scrDano()
     y += velv
 
     // diminui knockback aos poucos
-    knockback_x *= 0.8
-    knockback_y *= 0.8
+    knockback_x *= 0.9
+    knockback_y *= 0.9
 
     dano_timer--
 

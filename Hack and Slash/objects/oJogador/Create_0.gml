@@ -1,6 +1,6 @@
 #region VARIAVEIS DE MOVIMENTO
 
-vel = 7
+vel = 8
 velv = 0
 velh = 0
 dir_x = 1
@@ -11,8 +11,8 @@ dir_personagem = 1
 
 #region VARIAVEIS DASH
 
-dash_speed = 12
-dash_time = 10 // duração do dash em frames
+dash_speed = 14
+dash_time = 12 
 dash_timer = 0
 
 is_dashing = false
@@ -31,12 +31,8 @@ ataque_timer = 0
 is_ataque = false
 
 ataque_executado = false
-
 dir_x_ataque = dir_x
-
 alvo = noone
-proximo_combo = false
-acertou_inimigo = false
 
 #endregion
 
@@ -101,9 +97,6 @@ enum estados {
 	Dash,
 	Dano,
 	Morto,
-	Ataque1,
-	Ataque2,
-	Ataque3
 }
 
 estado = estados.Parado

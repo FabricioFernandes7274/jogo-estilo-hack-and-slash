@@ -1,12 +1,13 @@
 function scrMovimento()
 {
     #region INPUTS
+	
     var key_esquerda = keyboard_check(ord("A"))
     var key_direita = keyboard_check(ord("D"))
     var key_cima = keyboard_check(ord("W"))
     var key_baixo = keyboard_check(ord("S"))
-    var key_ataque = keyboard_check(ord("J"))
-	var key_dash =  keyboard_check_pressed(ord("K"))
+	var key_dash = mouse_check_button_pressed(mb_right)
+
     #endregion
 
     #region DIRECAO
@@ -59,12 +60,7 @@ function scrMovimento()
 		if move_x == 0 && move_y == 0 {
 			     estado = estados.Parado
 		}
-	}
-
-    // ataque
-    if key_ataque {
-        estado = estados.Ataque1
-		ataque_timer = ataque_time
+	
 		
 		if move_x != 0 { 
 			dir_x_ataque = sign(move_x)
