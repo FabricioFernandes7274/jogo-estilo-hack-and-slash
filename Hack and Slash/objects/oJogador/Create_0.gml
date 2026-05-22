@@ -95,3 +95,11 @@ image_xscale = sprite_scale
 image_yscale = sprite_scale
 
 #endregion
+#region VARIAVEIS DE MANA E MAGIA
+mana_max      = 100
+mana          = 100
+mana_regen    = 0.3
+custo_bola    = 30
+bola_cooldown = 0
+bola_cd_max   = 45
+#endregion

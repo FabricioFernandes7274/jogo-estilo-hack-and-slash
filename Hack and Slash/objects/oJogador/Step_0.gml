@@ -23,6 +23,26 @@ and estado != estados.Morto
     }
 }
 
+if mana < mana_max {
+    mana += mana_regen
+    if mana > mana_max mana = mana_max
+}
+
+if mouse_check_button_pressed(mb_right)
+and bola_cooldown <= 0
+and mana >= custo_bola
+and estado != estados.Morto {
+    mana          -= custo_bola
+    bola_cooldown  = bola_cd_max
+    var dir_bola   = point_direction(x, y, mouse_x, mouse_y)
+    var b          = instance_create_layer(x, y, "Instances", oBolaDeFogo)
+    b.direcao      = dir_bola
+    b.dono         = id
+	b.alvo_x   = mouse_x  
+	b.alvo_y   = mouse_y
+}
+
+if bola_cooldown > 0 bola_cooldown--
 switch (estado) {
 	case estados.Parado:
 			scrParado()

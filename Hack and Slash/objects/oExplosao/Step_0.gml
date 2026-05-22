@@ -1,0 +1,1 @@
+raio_atual = lerp(raio_atual, raio_max, 0.25)
