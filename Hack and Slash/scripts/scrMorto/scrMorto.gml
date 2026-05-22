@@ -10,6 +10,10 @@ function scrMorto()
 
     if morte_timer <= 0
     {
+		with (oGameManager)
+        {
+            tempo_run = 0
+        }
         room_restart()
     }
 }

@@ -17,6 +17,7 @@
     {"$GMFolder":"","%Name":"Parede","folderPath":"folders/Environment/Cenarios/Parede.yy","name":"Parede","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Gameplay","folderPath":"folders/Gameplay.yy","name":"Gameplay","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Camera","folderPath":"folders/Gameplay/Camera.yy","name":"Camera","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"GameManager","folderPath":"folders/Gameplay/GameManager.yy","name":"GameManager","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Inimigos","folderPath":"folders/Gameplay/Inimigos.yy","name":"Inimigos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Jogador","folderPath":"folders/Gameplay/Jogador.yy","name":"Jogador","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Gameplay/Jogador/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -25,6 +26,7 @@
     {"$GMFolder":"","%Name":"Teste","folderPath":"folders/Room/Teste.yy","name":"Teste","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"UI","folderPath":"folders/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fontes","folderPath":"folders/UI/Fontes.yy","name":"Fontes","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"HUD","folderPath":"folders/UI/HUD.yy","name":"HUD","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menus","folderPath":"folders/UI/Menus.yy","name":"Menus","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Creditos","folderPath":"folders/UI/Menus/Creditos.yy","name":"Creditos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"EscolhaDePersonagem","folderPath":"folders/UI/Menus/EscolhaDePersonagem.yy","name":"EscolhaDePersonagem","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -49,7 +51,9 @@
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oCreditos","path":"objects/oCreditos/oCreditos.yy",},},
     {"id":{"name":"oEscolhaPersonagem","path":"objects/oEscolhaPersonagem/oEscolhaPersonagem.yy",},},
+    {"id":{"name":"oGameManager","path":"objects/oGameManager/oGameManager.yy",},},
     {"id":{"name":"oHitBox","path":"objects/oHitBox/oHitBox.yy",},},
+    {"id":{"name":"oHUD","path":"objects/oHUD/oHUD.yy",},},
     {"id":{"name":"oInimigo","path":"objects/oInimigo/oInimigo.yy",},},
     {"id":{"name":"oJogador","path":"objects/oJogador/oJogador.yy",},},
     {"id":{"name":"oMainMenu","path":"objects/oMainMenu/oMainMenu.yy",},},
@@ -80,9 +84,6 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"children":[
-        {"roomId":{"name":"rmTestePlayer","path":"rooms/rmTestePlayer/rmTestePlayer.yy",},},
-      ],"groupName":"Testes",},
-    {"children":[
         {"roomId":{"name":"rmMainMenu","path":"rooms/rmMainMenu/rmMainMenu.yy",},},
         {"roomId":{"name":"rmEscolhaPersonagem","path":"rooms/rmEscolhaPersonagem/rmEscolhaPersonagem.yy",},},
         {"roomId":{"name":"rmFase01","path":"rooms/rmFase01/rmFase01.yy",},},
@@ -90,6 +91,9 @@
         {"roomId":{"name":"rmFase03","path":"rooms/rmFase03/rmFase03.yy",},},
         {"roomId":{"name":"rmCreditos","path":"rooms/rmCreditos/rmCreditos.yy",},},
       ],"groupName":"principal",},
+    {"children":[
+        {"roomId":{"name":"rmTestePlayer","path":"rooms/rmTestePlayer/rmTestePlayer.yy",},},
+      ],"groupName":"Testes",},
   ],
   "templateType":"game",
   "TextureGroups":[

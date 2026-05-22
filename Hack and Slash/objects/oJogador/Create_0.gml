@@ -29,10 +29,8 @@ ataque_time = 10 // duração do ataque
 ataque_timer = 0
 
 is_ataque = false
-
 ataque_executado = false
-dir_x_ataque = dir_x
-alvo = noone
+dir_ataque = 0
 
 #endregion
 
@@ -57,21 +55,8 @@ morte_timer = 0
 #region VARIAVEIS DE STATUS
 
 vida = 3
+vida_max = 3
 dano = 1
-pontuacao = 0
-
-enum Rank {
-	noone,
-	D,
-	C,
-	B,
-	A,
-	S,
-	SS,
-	SSS
-}
-
-style = Rank.noone
 
 #endregion
 
