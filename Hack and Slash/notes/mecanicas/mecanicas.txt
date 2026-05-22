@@ -4,9 +4,9 @@
 4. Melhorar  IA do inimigo - feito
 6. GUI completo com pontuação/UI e etc. - + ou -
 
-
 4. fazer as fases - falta
 3. balanceamento do jogo - falta
+
 
 7. Sistema de taunt - falta talvez bão tenha
 
