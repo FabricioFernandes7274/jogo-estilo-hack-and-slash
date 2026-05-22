@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprBoladefogo",
+    "path":"sprites/sprBoladefogo/sprBoladefogo.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
