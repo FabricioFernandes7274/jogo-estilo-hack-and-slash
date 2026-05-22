@@ -2,21 +2,17 @@ function scrExplosao() {
     if explodiu exit
     explodiu = true
 
+    // Cria efeito visual de explosão
     instance_create_layer(x, y, "Instances", oExplosao)
 
-    // salva antes de destruir
-    var exp_x   = x
-    var exp_y   = y
-    var exp_raio = raio_exp
-    var exp_dano = dano_exp
-
+    // Dano em área — acerta todos os inimigos no raio
     with (oInimigo) {
-        if point_distance(x, y, exp_x, exp_y) <= exp_raio {
-            var kb_dir  = point_direction(exp_x, exp_y, x, y)
-            knockback_x = lengthdir_x(9, kb_dir)
-            knockback_y = lengthdir_y(9, kb_dir)
-            dano_timer  = 22
-            vida       -= exp_dano
+        if point_distance(x, y, other.x, other.y) <= other.raio_exp {
+            var kb_dir        = point_direction(other.x, other.y, x, y)
+            knockback_x       = lengthdir_x(9, kb_dir)
+            knockback_y       = lengthdir_y(9, kb_dir)
+            dano_timer        = 22
+            vida              -= other.dano_exp
             if vida <= 0 {
                 estado = estadosInimigo.Morto
             } else {
