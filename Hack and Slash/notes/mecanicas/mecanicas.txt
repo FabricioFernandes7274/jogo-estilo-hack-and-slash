@@ -2,8 +2,12 @@
 2. dano/vida - feito
 3. invencibilidade após tomar dano - feito
 
+
+4. fazer as fases - falta
+3. balanceamento do jogo - falta
 4. Melhorar  IA do inimigo - falta
 6. GUI completo com pontuação/UI e etc. - falta
+
 7. Sistema de taunt - falta talvez bão tenha
 
 

@@ -1,5 +1,6 @@
 function scrDano()
 {
+	
     velh = knockback_x
     velv = knockback_y
 

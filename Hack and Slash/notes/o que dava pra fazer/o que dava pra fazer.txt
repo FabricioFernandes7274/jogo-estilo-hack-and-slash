@@ -1,7 +1,4 @@
-
-
-
-
-
+sistema de rank e pontuação
 afterimagem do jogador dashando
 
+tem que retirar a parte do rank do personagem
