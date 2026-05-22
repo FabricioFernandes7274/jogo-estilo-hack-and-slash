@@ -1,0 +1,11 @@
+direcao    = 0
+velocidade = 7
+dono       = noone
+raio_exp   = 80    
+dano_exp   = 2
+vida       = 1     
+dist_perc  = 0     
+explodiu   = false
+alvo_x = 0
+alvo_y = 0
+dist_max = 500
