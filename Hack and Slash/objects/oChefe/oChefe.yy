@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oBolaDeFogo",
+  "%Name":"oChefe",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oBolaDeFogo",
+  "name":"oChefe",
   "overriddenProperties":[],
   "parent":{
-    "name":"Jogador",
-    "path":"folders/Gameplay/Jogador.yy",
+    "name":"Inimigos",
+    "path":"folders/Gameplay/Inimigos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprBoladefogo",
-    "path":"sprites/sprBoladefogo/sprBoladefogo.yy",
+    "name":"Sprite8",
+    "path":"sprites/Sprite8/Sprite8.yy",
   },
   "spriteMaskId":null,
   "visible":true,

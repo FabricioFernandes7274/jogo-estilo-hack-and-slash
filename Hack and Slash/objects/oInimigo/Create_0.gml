@@ -1,9 +1,9 @@
 enum estadosInimigo {
     Patrol, Chase, Combat, Stagger, Morto
 }
-vel = 2
+vel = 3
 
-vida = 2
+vida = 10
 dano_cooldown = 0
 
 estado        = estadosInimigo.Patrol

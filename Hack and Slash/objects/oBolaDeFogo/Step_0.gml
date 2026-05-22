@@ -4,20 +4,19 @@ x += lengthdir_x(velocidade, direcao)
 y += lengthdir_y(velocidade, direcao)
 dist_perc += velocidade
 
-// Explode ao bater em parede
-if place_meeting(x, y, oParede) {
-    scrExplosao()
-    exit
-}
+if place_meeting(x, y, oParede)  { scrExplosao(); exit }
+if dist_perc >= dist_max         { scrExplosao(); exit }
+if point_distance(x, y, alvo_x, alvo_y) < velocidade { scrExplosao(); exit }
 
-// Explode ao chegar no alvo (posição do mouse no momento do lançamento)
-if point_distance(x, y, alvo_x, alvo_y) < velocidade {
-    scrExplosao()
-    exit
+with (oInimigo) {
+    if point_distance(x, y, other.x, other.y) < 32 {
+        with (other) { scrExplosao(); }
+        exit
+    }
 }
-
-// Explode se passou da distância máxima
-if dist_perc >= dist_max {
-    scrExplosao()
-    exit
+with (oChefe) {
+    if point_distance(x, y, other.x, other.y) < 32 {
+        with (other) { scrExplosao(); }
+        exit
+    }
 }
