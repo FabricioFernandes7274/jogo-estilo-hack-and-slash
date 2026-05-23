@@ -1,5 +1,5 @@
 if instance_exists(oJogador)
-{
+{	
     var player = instance_find(oJogador, 0)
 
     var hp = player.vida
@@ -10,7 +10,8 @@ if instance_exists(oJogador)
 
     var hud_x = 134
     var hud_y = 50
-
+	
+	// hp
     var hp_perc = hp / max_hp
 
     var hp_x = hud_x - 116
@@ -39,10 +40,7 @@ if instance_exists(oJogador)
         false
     )
 
-    // =========================
-    // MANA
-    // =========================
-
+	// mana
     var mana_perc = mana / mana_max
 
     var mana_x = hp_x
@@ -91,4 +89,14 @@ if instance_exists(oJogador)
         mana_y + 11,
         "Mana: " + string(floor(mana)) + "/" + string(mana_max)
     )
+	
+	var qtd_inimigos = instance_number(oInimigo)
+	var qtd_arqueiros = instance_number(oArqueiro)
+	var qtd_chefes = instance_number(oChefe)
+	
+	draw_text(
+    55,
+    mana_y * 2 - 10,
+    "Inimgos: " + string(qtd_inimigos + qtd_arqueiros + qtd_chefes)
+)
 }

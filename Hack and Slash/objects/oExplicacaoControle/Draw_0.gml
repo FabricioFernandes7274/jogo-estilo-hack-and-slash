@@ -1,0 +1,1 @@
+draw_sprite_ext(guia_dos_controles, 0, 0, 0, 1, 1, 0, c_white, 1)

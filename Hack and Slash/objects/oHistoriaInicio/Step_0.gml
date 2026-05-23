@@ -21,7 +21,7 @@ if timer_intro > 600
 }
 
 if timer_intro > 900 {
-	room_goto(rmFase01)
+	room_goto(rmExplicacaoControle)
 }
 
 // limita em 1

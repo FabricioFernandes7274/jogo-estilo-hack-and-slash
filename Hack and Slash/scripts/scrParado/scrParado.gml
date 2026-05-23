@@ -18,8 +18,9 @@ function scrParado()
 
 	#region ANIMAÇÃO
 
-    sprite_index = sprJogadorparado
-
+	if not is_ataque{
+	    sprite_index = sprJogadorparado
+	}
 	#endregion
 
 	#region TROCA DE ESTADO

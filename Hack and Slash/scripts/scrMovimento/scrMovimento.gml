@@ -63,11 +63,6 @@ function scrMovimento()
 		if move_x == 0 && move_y == 0 {
 			     estado = estados.Parado
 		}
-	
-		
-		if move_x != 0 { 
-			dir_x_ataque = sign(move_x)
-		}
     }
 
     // dash
