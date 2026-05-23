@@ -1,8 +1,8 @@
 function scrAtaque()
 {	
 	sprite_index = sprJogadorAtaque
-	
-	image_index += 0.3
+
+	image_index += 0.35
 
 	// limitar para os 4 primeiros frames
 	if (image_index >= 4) {
@@ -12,6 +12,8 @@ function scrAtaque()
     // cria hitbox uma vez
     if !ataque_executado
     {
+		audio_play_sound(ataqueJogador, 1, false)
+
         ataque_executado = true
 
         var atk_dist = 70

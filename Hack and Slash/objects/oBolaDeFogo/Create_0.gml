@@ -9,3 +9,4 @@ explodiu   = false
 alvo_x = 0
 alvo_y = 0
 dist_max = 500
+audio_play_sound(lancamentoBolaDeFogo, 1, false)

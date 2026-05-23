@@ -1,7 +1,7 @@
-if  (global.fases) {
+if (global.fases){
 	if (instance_number(oInimigo) == 0 && instance_number(oArqueiro) == 0 && instance_number(oChefe) == 0 && !global.trocando_fase) {
-	    global.trocando_fase = true
-	    alarm[0] = room_speed * 1 // espera 1 segundo
+		global.trocando_fase = true
+		alarm[0] = room_speed * 1 // espera 1 segundo
 	}
 }
 

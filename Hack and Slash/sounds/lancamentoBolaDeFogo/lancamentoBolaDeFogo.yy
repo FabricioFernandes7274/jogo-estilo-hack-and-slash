@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"lancamentoBolaDeFogo",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.93600905,
+  "exportDir":"",
+  "name":"lancamentoBolaDeFogo",
+  "parent":{
+    "name":"musicas",
+    "path":"folders/Assents/musicas.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"lancamentoBolaDeFogo.mp3",
+  "volume":1.0,
+}

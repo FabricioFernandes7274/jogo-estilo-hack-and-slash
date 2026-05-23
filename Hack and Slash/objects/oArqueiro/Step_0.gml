@@ -25,6 +25,7 @@ switch estado {
         if cd_tiro <= 0 && dist < dist_visao {
             cd_tiro   = cd_tiro_max
             atk_timer = 20
+			audio_play_sound(flechaInimigo, 1, false)
             estado    = estadosArqueiro.Atirar
         }
 

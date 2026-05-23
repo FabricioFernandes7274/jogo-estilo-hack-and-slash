@@ -122,6 +122,7 @@ switch estado {
     break
 
     case estadosChefao.Rajada:
+		audio_play_sound(projeteisBoss, 1, false)
         atk_timer--
         if !ataque_executado && atk_timer <= 5 {
             ataque_executado = true
@@ -171,6 +172,7 @@ switch estado {
     if !laser_ativo && laser_charge_timer < laser_charge_dur {
         if laser_charge_timer == 0 {
             laser_dir = dir_ataque  // trava a direção aqui
+			audio_play_sound(laserBoss, 1, false)
         }
         laser_charge_timer++
     }
