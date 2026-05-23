@@ -4,7 +4,7 @@ enum estadosChefao {
 
 estado     = estadosChefao.Idle
 fase       = 1
-hp         = 60
+hp         = 20
 hp_max     = 60
 vel        = 3.5
 

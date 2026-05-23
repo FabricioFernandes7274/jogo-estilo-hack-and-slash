@@ -24,8 +24,8 @@ switch estado {
         var wp = waypoints[wp_index]
         var wd = point_distance(x, y, wp[0], wp[1])
         if wd > 4 {
-            x += ((wp[0] - x) / wd) * (vel * 0.6)
-            y += ((wp[1] - y) / wd) * (vel * 0.6)
+            var dir = point_direction(x, y, wp[0], wp[1]);
+			move_colisao(dir, vel * 0.6);
         } else {
             wp_index = (wp_index + 1) mod array_length(waypoints)
         }
@@ -44,8 +44,7 @@ case estadosInimigo.Chase:
     }
     
     var ddir = point_direction(x, y, tx, ty)
-    x += lengthdir_x(vel, ddir)
-    y += lengthdir_y(vel, ddir)
+    move_colisao(ddir, vel);
 
     if dist < dist_ataque {
         estado = estadosInimigo.Combat
@@ -65,16 +64,8 @@ break
         dir_ataque = point_direction(x, y, px, py)
 
         var desired = dist_ataque * 0.8
-        if dist > desired + 8 {
-            x += lengthdir_x(vel, dir_ataque)
-            y += lengthdir_y(vel, dir_ataque)
-        } else if dist < desired - 8 {
-            x -= lengthdir_x(vel * 0.5, dir_ataque)
-            y -= lengthdir_y(vel * 0.5, dir_ataque)
-        } else {
-            x += lengthdir_x(vel * 0.6, dir_ataque + 90)
-            y += lengthdir_y(vel * 0.6, dir_ataque + 90)
-        }
+		
+        move_colisao(dir_ataque, vel);
 
         if atk_cooldown <= 0 && dist < dist_ataque {
             atk_cooldown     = atk_rate
@@ -103,4 +94,18 @@ break
     case estadosInimigo.Morto:
         instance_destroy()
     break
+}
+
+function move_colisao(dir, spd)
+{
+    var nx = x + lengthdir_x(spd, dir);
+    var ny = y + lengthdir_y(spd, dir);
+
+    if (!place_meeting(nx, y, oParede)) {
+        x = nx;
+    }
+
+    if (!place_meeting(x, ny, oParede)) {
+        y = ny;
+    }
 }

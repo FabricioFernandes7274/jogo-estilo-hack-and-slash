@@ -5,42 +5,90 @@ if instance_exists(oJogador)
     var hp = player.vida
     var max_hp = player.vida_max
 
-    var bar_w = 200
+    var mana = player.mana
+    var mana_max = player.mana_max
 
-    var hp_w = (hp / max_hp) * bar_w
+    var hud_x = 134
+    var hud_y = 50
 
-    draw_text(20, 20, "HP: " + string(hp))
+    var hp_perc = hp / max_hp
 
-    // FUNDO
+    var hp_x = hud_x - 116
+    var hp_y = hud_y - 20
+
+    var hp_w = 245
+    var hp_h = 22
+
     draw_set_color(c_black)
-    draw_rectangle(20, 50, 20 + bar_w, 70, true)
 
-    // VIDA
+    draw_rectangle(
+        hp_x,
+        hp_y,
+        hp_x + hp_w,
+        hp_y + hp_h,
+        false
+    )
+
     draw_set_color(c_red)
-    draw_rectangle(20, 50, 20 + bar_w, 70, true)
 
-    // BORDA
+    draw_rectangle(
+        hp_x,
+        hp_y,
+        hp_x + (hp_w * hp_perc),
+        hp_y + hp_h,
+        false
+    )
+
+    // =========================
+    // MANA
+    // =========================
+
+    var mana_perc = mana / mana_max
+
+    var mana_x = hp_x
+    var mana_y = hp_y + 34
+
+    var mana_w = 180
+    var mana_h = 14
+
+    draw_set_color(c_black)
+
+    draw_rectangle(
+        mana_x,
+        mana_y,
+        mana_x + mana_w,
+        mana_y + mana_h,
+        false
+    )
+
+    draw_set_color(c_blue)
+
+    draw_rectangle(
+        mana_x,
+        mana_y,
+        mana_x + (mana_w * mana_perc),
+        mana_y + mana_h,
+        false
+    )
+
+    // HUD por cima
+    draw_sprite(HP, 0, hud_x, hud_y)
+
+    // TEXTO
+    draw_set_halign(fa_center)
+    draw_set_valign(fa_center)
+
     draw_set_color(c_white)
-    draw_rectangle(20, 50, 20 + hp_w, 70, false)
-	
 
-    draw_set_color(c_white)
-	
-	var bx = 20
-	var by = 100
-	var bw = 150
-	var bh = 14
-	
-	var mana = player.mana
-	var mana_max = player.mana_max
+    draw_text(
+        130,
+        hp_y + 12,
+        "HP: " + string(hp) + "/" + string(max_hp)
+    )
 
-	draw_set_color(c_navy)
-	draw_rectangle(bx, by, bx + bw, by + bh, false)
-
-	draw_set_color(c_blue)
-	draw_rectangle(bx, by, bx + (bw * (mana / mana_max)), by + bh, false)
-
-	draw_set_color(c_white)
-	draw_set_halign(fa_left)
-	draw_text(bx, by - 16, "Mana: " + string(floor(mana)) + "/" + string(mana_max))
+    draw_text(
+        mana_x + mana_w / 2,
+        mana_y + 11,
+        "Mana: " + string(floor(mana)) + "/" + string(mana_max)
+    )
 }

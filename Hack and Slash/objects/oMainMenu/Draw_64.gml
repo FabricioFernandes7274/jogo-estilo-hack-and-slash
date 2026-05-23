@@ -1,27 +1,16 @@
-draw_set_font(fntMainMenu)
-draw_set_color(c_white)
+var gui_w = display_get_gui_width()
+var gui_h = display_get_gui_height()
 
-var gui_largura = display_get_gui_width()
-var gui_altura = display_get_gui_height()
-var x1 = gui_largura / 2
-var y1 = gui_altura / 2
-var dist = 50
+var escala_x = 0.57
+var escala_y = 0.50
 
-draw_text(x1, y1 / 2, "NOME DO JOGO")
+var centro_x = gui_w / 2
+var centro_y = gui_h / 2
 
-for (var i = 0; i < op_max; i++) {
-	
-	draw_set_halign(fa_center) // centraliza  o texto no meio horizontalmente
-	draw_set_valign(fa_center) // centraliza  o texto no meio verticalmente
-	
-	if index == i {
-		draw_set_color(c_yellow)
-	} else {
-		draw_set_color(c_white)
-	}
-	
-	// desenha o texto na tela
-	draw_text(x1, y1 + (dist * i), opcoes[i])
-}
-
-draw_set_font(-1)
+draw_sprite_ext(
+    Tela_inicial, index,
+    centro_x,
+    centro_y,
+    escala_x, escala_y,
+    0, c_white, 1
+)

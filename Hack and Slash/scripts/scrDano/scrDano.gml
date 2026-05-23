@@ -1,6 +1,5 @@
 function scrDano()
 {
-	
     velh = knockback_x
     velv = knockback_y
 
@@ -10,6 +9,14 @@ function scrDano()
     // diminui knockback aos poucos
     knockback_x *= 0.9
     knockback_y *= 0.9
+
+    // verifica morte
+    if vida <= 0
+    {
+        vida = 0
+        estado = estados.Morto
+        exit
+    }
 
     dano_timer--
 

@@ -1,6 +1,4 @@
-tempo_run = 0
-
-with (oGameManager)
-{
-    tempo_run = 0
-}
+global.fase_atual = 1;
+global.max_fases = 3;
+global.trocando_fase = true
+global.fases = true

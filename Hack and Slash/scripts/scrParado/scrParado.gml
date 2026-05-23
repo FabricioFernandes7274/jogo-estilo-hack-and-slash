@@ -3,30 +3,35 @@ function scrParado()
     #region INPUTS
 	
     var key_esquerda = keyboard_check(ord("A"))
-    var key_direita = keyboard_check(ord("D"))
-    var key_cima = keyboard_check(ord("W"));
-    var key_baixo = keyboard_check(ord("S"))
+    var key_direita  = keyboard_check(ord("D"))
+    var key_cima     = keyboard_check(ord("W"))
+    var key_baixo    = keyboard_check(ord("S"))
 
 	#endregion 
 
 	#region DIREÇÃO
+
     var move_x = key_direita - key_esquerda
     var move_y = key_baixo - key_cima
+
+	#endregion
+
+	#region ANIMAÇÃO
+
+    sprite_index = sprJogadorparado
+
 	#endregion
 
 	#region TROCA DE ESTADO
 	
-    // se começou a se mover, vai para o estado movimento
-    if (move_x != 0 || move_y != 0) {
-		
+    if (move_x != 0 || move_y != 0)
+    {
         estado = estados.Movimento
-        
-		exit
+        exit
     }
 	
 	#endregion
 
-    // não move nada enquanto parado
     velh = 0
     velv = 0
 }

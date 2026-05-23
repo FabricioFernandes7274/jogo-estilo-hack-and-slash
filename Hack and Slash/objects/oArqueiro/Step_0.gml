@@ -18,8 +18,7 @@ switch estado {
         // Sempre recua se jogador estiver perto demais
         if dist < dist_ideal {
             var dir_fuga = point_direction(px, py, x, y)
-            x += lengthdir_x(vel, dir_fuga)
-            y += lengthdir_y(vel, dir_fuga)
+            move_colisao(dir_fuga, vel)
         }
 
         // Atira independente de estar recuando ou não
@@ -39,8 +38,7 @@ switch estado {
         // Continua recuando enquanto prepara o tiro
         if dist < dist_ideal {
             var dir_fuga = point_direction(px, py, x, y)
-            x += lengthdir_x(vel, dir_fuga)
-            y += lengthdir_y(vel, dir_fuga)
+            move_colisao(dir_fuga, vel)
         }
 
         // Dispara na metade do timer
@@ -54,14 +52,15 @@ switch estado {
     break
 
     case estadosArqueiro.Stagger:
-        velh = knockback_x
-        velv = knockback_y
-        x += velh
-        y += velv
+	
+		move_colisao(point_direction(0, 0, knockback_x, knockback_y), point_distance(0, 0, knockback_x, knockback_y))
+		
         knockback_x *= 0.9
         knockback_y *= 0.9
+		
         dano_timer--
-        if dano_timer <= 0 {
+        
+		if dano_timer <= 0 {
             velh   = 0
             velv   = 0
             estado = estadosArqueiro.Recuar
@@ -71,4 +70,18 @@ switch estado {
     case estadosArqueiro.Morto:
         instance_destroy()
     break
+}
+
+function move_colisao(dir, spd)
+{
+    var nx = x + lengthdir_x(spd, dir)
+    var ny = y + lengthdir_y(spd, dir)
+
+    if (!place_meeting(nx, y, oParede)) {
+        x = nx
+    }
+
+    if (!place_meeting(x, ny, oParede)) {
+        y = ny
+    }
 }

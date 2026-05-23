@@ -1,5 +1,8 @@
 function scrDash()
 {
+	sprite_index = sprJogadorDash
+    image_speed = 0.3
+	
 	is_dashing = true
 	
 	// calcula para onde o personagem vai se mover no dash

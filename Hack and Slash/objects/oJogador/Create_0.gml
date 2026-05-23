@@ -11,8 +11,8 @@ dir_personagem = 1
 
 #region VARIAVEIS DASH
 
-dash_speed = 14
-dash_time = 12 
+dash_speed = 16
+dash_time = 14
 dash_timer = 0
 
 is_dashing = false
@@ -62,15 +62,8 @@ dano = 1
 
 #region ESCOLHA DE SPRITES
 
-var personagens = [
-	sprPlayer1,
-	sprPlayer2,
-	sprPlayer3,
-	sprPlayer4
-]
-
 // sprite_index = personagens[global.personagem_escolhido]
-sprite_index = sprPlayer1
+sprite_index = sprJogadorparado
 
 #endregion
 

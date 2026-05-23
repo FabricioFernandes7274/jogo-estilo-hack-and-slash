@@ -1,51 +1,16 @@
-// fundo
-draw_set_halign(fa_center)
-draw_set_valign(fa_middle)
+var gui_w = display_get_gui_width()
+var gui_h = display_get_gui_height()
 
-draw_set_font(fntEscolhaPersonagem)
+var escala_x = 1.03
+var escala_y = 1.10
 
-// título
-draw_text(room_width/2, 100, "Escolha seu personagem")
+var centro_x = gui_w / 2
+var centro_y = gui_h / 2
 
-// espaçamento entre os personagens
-var espacamento = 150
-
-// centraliza o grupo inteiro
-var inicio_x = room_width/2 - (total * espacamento) / 2 + espacamento / 2
-
-draw_set_font(fntMainMenu)
-for (var i = 0; i < total; i++)
-{
-	if index == i {
-		draw_set_color(c_yellow)
-	} else {
-		draw_set_color(c_white)
-	}
-	
-    draw_sprite(
-        personagens[i],
-        0,
-        inicio_x + i * espacamento,
-        room_height / 2
-    )
-	
-		// texto abaixo do personagem
-	var nome = personagem_nome[i];
-
-	draw_text(inicio_x + i * espacamento, room_height / 2 + 50, nome)
-}
-
-draw_set_font(fntEscolhaPersonagem)
-
-// reset cor
-draw_set_color(c_white)
-
-// ajuda
-draw_text(
-    room_width/2,
-    room_height - 100,
-    "<  > para trocar"
+draw_sprite_ext(
+    Selecao, index,
+    centro_x,
+    centro_y,
+    escala_x, escala_y,
+    0, c_white, 1
 )
-
-// reseta a font questão de boa prática
-draw_set_font(-1)

@@ -1,5 +1,14 @@
 function scrAtaque()
-{
+{	
+	sprite_index = sprJogadorAtaque
+	
+	image_index += 0.3
+
+	// limitar para os 4 primeiros frames
+	if (image_index >= 4) {
+	    image_index = 0;
+	}
+	
     // cria hitbox uma vez
     if !ataque_executado
     {

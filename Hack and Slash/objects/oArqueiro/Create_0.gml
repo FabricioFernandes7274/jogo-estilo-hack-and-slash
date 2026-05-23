@@ -3,7 +3,7 @@ enum estadosArqueiro {
 }
 
 estado        = estadosArqueiro.Idle
-vida            = 6
+vida            = 4
 vel           = 2.5
 dist_visao    = 350
 dist_ideal    = 250  // distância que ele quer manter

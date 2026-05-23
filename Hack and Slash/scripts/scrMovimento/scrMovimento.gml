@@ -6,7 +6,7 @@ function scrMovimento()
     var key_direita = keyboard_check(ord("D"))
     var key_cima = keyboard_check(ord("W"))
     var key_baixo = keyboard_check(ord("S"))
-	var key_dash = mouse_check_button_pressed(mb_right)
+	var key_dash = keyboard_check_pressed(vk_space)
 
     #endregion
 
@@ -43,6 +43,9 @@ function scrMovimento()
     #endregion
 
 	#region VIRAR SPRITE
+	
+	sprite_index = sprJogadorAndando
+    image_speed = 0.2
 
 	if move_x > 0 {
 	    image_xscale = sprite_scale

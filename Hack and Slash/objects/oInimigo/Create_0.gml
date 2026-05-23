@@ -3,7 +3,7 @@ enum estadosInimigo {
 }
 vel = 3
 
-vida = 10
+vida = 3
 dano_cooldown = 0
 
 estado        = estadosInimigo.Patrol
