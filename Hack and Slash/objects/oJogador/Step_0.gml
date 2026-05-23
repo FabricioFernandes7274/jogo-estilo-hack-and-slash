@@ -25,7 +25,7 @@ and estado != estados.Morto
 
 if mana < mana_max {
     mana += mana_regen
-    if mana > mana_max mana = mana_max
+    if mana >= mana_max mana = mana_max
 }
 
 if mouse_check_button_pressed(mb_right)
@@ -42,7 +42,8 @@ and estado != estados.Morto {
 	b.alvo_y   = mouse_y
 }
 
-if bola_cooldown > 0 bola_cooldown--
+if bola_cooldown > 0 { bola_cooldown-- }
+
 switch (estado) {
 	case estados.Parado:
 			scrParado()

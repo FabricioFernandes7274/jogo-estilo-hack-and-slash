@@ -6,7 +6,7 @@
   "name":"scrAtaqueInimigo",
   "parent":{
     "name":"Scripts",
-    "path":"folders/Gameplay/Jogador/Scripts.yy",
+    "path":"folders/Gameplay/Inimigos/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
