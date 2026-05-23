@@ -20,3 +20,9 @@ with (oChefe) {
         exit
     }
 }
+with (oArqueiro) {
+    if point_distance(x, y, other.x, other.y) < 32 {
+        with (other) { scrExplosao(); }
+        exit
+    }
+}

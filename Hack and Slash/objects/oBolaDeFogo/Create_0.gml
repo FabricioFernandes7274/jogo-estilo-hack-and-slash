@@ -1,5 +1,5 @@
 direcao    = 0
-velocidade = 7
+velocidade = 12
 dono       = noone
 raio_exp   = 80    
 dano_exp   = 2
