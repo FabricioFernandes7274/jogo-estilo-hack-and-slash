@@ -27,6 +27,7 @@ function proxima_fase() {
 		global.tocou = false
 	}
 	if global.fase_atual == 4 {
+		audio_stop_all()
 		global.fases = false
 		room_goto(rmHistoriaFinal)
 		exit

@@ -145,12 +145,12 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rmFase01","path":"rooms/rmFase01/rmFase01.yy",},},
     {"children":[
         {"roomId":{"name":"rmMainMenu","path":"rooms/rmMainMenu/rmMainMenu.yy",},},
         {"roomId":{"name":"rmEscolhaPersonagem","path":"rooms/rmEscolhaPersonagem/rmEscolhaPersonagem.yy",},},
         {"roomId":{"name":"rmHistoriaIcinicio","path":"rooms/rmHistoriaIcinicio/rmHistoriaIcinicio.yy",},},
         {"roomId":{"name":"rmExplicacaoControle","path":"rooms/rmExplicacaoControle/rmExplicacaoControle.yy",},},
+        {"roomId":{"name":"rmFase01","path":"rooms/rmFase01/rmFase01.yy",},},
         {"roomId":{"name":"rmFase02","path":"rooms/rmFase02/rmFase02.yy",},},
         {"roomId":{"name":"rmFase03","path":"rooms/rmFase03/rmFase03.yy",},},
         {"roomId":{"name":"rmHistoriaFinal","path":"rooms/rmHistoriaFinal/rmHistoriaFinal.yy",},},
