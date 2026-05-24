@@ -1,7 +1,7 @@
 function scrDash()
 {
 	sprite_index = sprJogadorDash
-    image_speed = 0.3
+    image_speed = 0.5
 	
 	is_dashing = true
 	

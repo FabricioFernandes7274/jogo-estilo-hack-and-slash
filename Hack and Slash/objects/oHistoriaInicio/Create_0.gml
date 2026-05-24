@@ -4,3 +4,5 @@ alpha3 = 0
 alpha4 = 0
 
 timer_intro = 0
+
+resetar_fases()
