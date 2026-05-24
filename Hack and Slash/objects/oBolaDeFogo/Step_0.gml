@@ -10,18 +10,21 @@ if point_distance(x, y, alvo_x, alvo_y) < velocidade { scrExplosao(); exit }
 
 with (oInimigo) {
     if point_distance(x, y, other.x, other.y) < 32 {
+		flash_dano = 25
         with (other) { scrExplosao(); }
         exit
     }
 }
 with (oChefe) {
     if point_distance(x, y, other.x, other.y) < 32 {
+		flash_dano = 25
         with (other) { scrExplosao(); }
         exit
     }
 }
 with (oArqueiro) {
     if point_distance(x, y, other.x, other.y) < 32 {
+		flash_dano = 25
         with (other) { scrExplosao(); }
         exit
     }

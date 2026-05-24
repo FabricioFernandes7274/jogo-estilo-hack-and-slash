@@ -29,3 +29,5 @@ wp_index      = 0
 last_seen_x   = 0
 last_seen_y   = 0
 has_last_seen = false
+
+flash_dano = 0

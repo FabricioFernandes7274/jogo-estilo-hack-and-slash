@@ -20,3 +20,5 @@ knockback_x   = 0
 knockback_y   = 0
 velh          = 0
 velv          = 0
+
+flash_dano = 0

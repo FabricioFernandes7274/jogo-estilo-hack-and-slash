@@ -109,3 +109,21 @@ function move_colisao(dir, spd)
         y = ny;
     }
 }
+
+if flash_dano > 0
+{
+    flash_dano--
+    
+    if flash_dano mod 2 == 0
+    {
+        image_alpha = 0.3
+    }
+    else
+    {
+        image_alpha = 1
+    }
+}
+else
+{
+    image_alpha = 1
+}

@@ -6,6 +6,7 @@ if other.dano_cooldown <= 0
     other.knockback_x = lengthdir_x(7, kb_dir)
     other.knockback_y = lengthdir_y(7, kb_dir)
     other.dano_timer  = 22
+	other.flash_dano = 25
     other.estado = estadosInimigo.Stagger
 }
 

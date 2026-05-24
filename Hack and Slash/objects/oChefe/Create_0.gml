@@ -41,3 +41,5 @@ transitou    = false
 
 telegraf_timer = 0
 telegraf_tipo  = ""
+
+flash_dano = 0
