@@ -12,6 +12,10 @@ function scrAtaque()
 
         var atk_dist = 70
 
+        // =========================
+        // HITBOX FRENTE
+        // =========================
+
         var atk_x = x + lengthdir_x(atk_dist, dir_ataque)
         var atk_y = y + lengthdir_y(atk_dist, dir_ataque)
 
@@ -24,6 +28,25 @@ function scrAtaque()
 
         hit.owner = id
         hit.image_angle = dir_ataque
+
+        // =========================
+        // HITBOX 90°
+        // =========================
+
+        var side_dir = dir_ataque + 90
+
+        var side_x = x + lengthdir_x(atk_dist, side_dir)
+        var side_y = y + lengthdir_y(atk_dist, side_dir)
+
+        var hit2 = instance_create_layer(
+            side_x,
+            side_y,
+            "Instances",
+            oHitBox
+        )
+
+        hit2.owner = id
+        hit2.image_angle = side_dir
     }
 
     ataque_timer--

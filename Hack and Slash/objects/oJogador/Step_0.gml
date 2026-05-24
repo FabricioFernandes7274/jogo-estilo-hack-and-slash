@@ -10,7 +10,14 @@ and estado != estados.Morto
     ataque_executado = false
 
     // salva direção do mouse
-    dir_ataque = point_direction(x, y, mouse_x, mouse_y)
+    if image_xscale > 0
+	{
+	    dir_ataque = 0
+	}
+	else
+	{
+	    dir_ataque = 180
+	}
 	
 	// vira personagem
     if mouse_x > x
