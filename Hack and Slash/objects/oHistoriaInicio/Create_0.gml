@@ -5,4 +5,6 @@ alpha4 = 0
 
 timer_intro = 0
 
-resetar_fases()
+if instance_exists(oGameManager){
+	oGameManager.resetar_fases()
+}
